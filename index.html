@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schlesinger Library | Racdliffe Institute | Harvard University</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/default.js"></script>
+</head>
+<body>
+
+    <!--
+        Hollis search box: https://wiki.harvard.edu/confluence/pages/viewpage.action?pageId=220667073
+        Prestp/Hollis API: https://wiki.harvard.edu/confluence/pages/viewpage.action?pageId=165478931
+    -->
+
+    <div class="section hu-default">   
+        <h3>Harvard University default settings</h3>   
+        <div id="primoQuickSearchWrapper" style="margin-top: -10px;">
+            <form id="simple" name="searchPrimoForm" method="get" target="_self" style="float:left;" action="https://hollis.harvard.edu/primo-explore/search?" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="quickSearchPrimo()">
+                <input type="hidden" name="vid" value="HVD2">
+                <input type="hidden" name="search_scope" value="everything">
+                <input type="hidden" name="tab" value="everything">
+                <input type="hidden" name="query" id="primoQuery"  >
+                <input type="text" id="primoQueryTemp" value="" size="65" style="height:28px;padding-left:5px;font-size:16px;border-width: 1px;border-style: solid;border-color: #8996A0;">  
+                <input id="go"  title="Search HOLLIS+" onclick="quickSearchPrimo()" type="button" value="Search HOLLIS" alt="Search HOLLIS" style="height: 34px; font-size:12px; font-weight:normal; background:#a51c30;color:#ffffff;margin-left: -6px;width: 120px;font-family: Arial, Helvetica, sans-serif;font-style: normal;border-width: 1px;border-style: solid;border-color: #a51c30;border-bottom-width: 0px;">
+            </form>
+            
+            <div style="clear:both;">&nbsp;</div>
+        </div>
+    </div> <!-- end hu-default -->
+
+    <div class="section sl-default">   
+        <h3>Limited to Schlesinger Library records</h3>   
+        <div id="primoQuickSearchWrapper" style="margin-top: -10px;">
+            <form id="simple" name="searchSchlesingerForm" method="get" target="_self" style="float:left;" action="https://hollis.harvard.edu/primo-explore/search?" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="quickSearchPrimoSchlesinger()">
+                <input type="hidden" name="vid" value="HVD2">
+                <input type="hidden" name="search_scope" value="everything">
+                <input type="hidden" name="tab" value="everything">
+                <input type="hidden" name="mfacet" value="library,include,SCH,1">
+                <input type="hidden" name="query" id="schlesingerQuery"  >
+                <input type="text" id="schlesingerQueryTemp" value="" size="65" style="height:28px;padding-left:5px;font-size:16px;border-width: 1px;border-style: solid;border-color: #8996A0;">  
+                <input id="go"  title="Search HOLLIS+" onclick="quickSearchPrimoSchlesinger()" type="button" value="Search HOLLIS" alt="Search HOLLIS" style="height: 32px; font-size:12px; font-weight:normal; background:#a51c30;color:#ffffff;margin-left: -6px;width: 120px;font-family: Arial, Helvetica, sans-serif;font-style: normal;border-width: 1px;border-style: solid;border-color: #a51c30;border-bottom-width: 0px;">
+            </form>
+            
+            <div style="clear:both;">&nbsp;</div>
+        </div>
+    </div> <!-- end sl-default -->
+
+    
+</body>
+</html>
