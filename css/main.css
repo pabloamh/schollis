@@ -5,3 +5,44 @@ body {
 .section {
     margin: 5em 0 0 3em;
 }
+
+/** Styles for custom search **/
+
+#sl-query {
+    border: 1px solid #8996A0;
+    width: 40%;
+    padding: 0.25rem;
+    height: 2rem;
+    font-size: 1.4rem;
+}
+
+#submit-query {
+    border: 1px solid #8996A0;
+    background:#a51c30;
+    color: #fff;
+    height: 2.6rem;
+    padding: 0.5rem 1.6rem;
+    line-height: 1rem;
+    font-size: 1.4rem;
+    margin-left: -0.5rem;
+}
+
+fieldset {
+    width: 49%;
+}
+
+.network {
+    float: left;
+    padding-top: 1rem;
+    margin-right: 2rem;
+}
+
+.search-options {
+    list-style-type: none;
+}
+
+.search-options li {
+    display: inline-block;
+    margin-right: 2rem;
+}
+

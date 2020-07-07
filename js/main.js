@@ -8,3 +8,9 @@ function quickSearchPrimoSchlesinger() {
     document.forms["searchSchlesingerForm"].submit();
 } 
 
+function slQuery() {
+    document.getElementById("sl-main-query").value = "any,contains," + document.getElementById("sl-query").value.replace(/[,]/g," ");
+    document.forms["SchlesingerSearch"].submit();
+} 
+
+
